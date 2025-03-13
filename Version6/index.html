@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="components/nav-bar.js" defer></script>
+  <script src="components/art-gallery.js" defer></script>
+  <script src="components/art-modal.js" defer></script>
+  <script src="components/contact-form.js" defer></script>
+  <script src="components/theme-toggle.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="dark-theme">
+  <nav-bar></nav-bar>
+  
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Pixel <span class="accent">Art</span> Portfolio</h1>
+        <p>Creating vibrant digital worlds one pixel at a time</p>
+        <theme-toggle></theme-toggle>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-pixel-art.png" alt="Featured pixel art">
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <h2>My <span class="accent">Work</span></h2>
+      <art-gallery></art-gallery>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About <span class="accent">Me</span></h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="assets/artist-avatar.png" alt="Artist avatar">
+        </div>
+        <div class="about-text">
+          <p>Hello! I'm a passionate pixel artist with over 5 years of experience creating detailed digital worlds. My journey began with a love for retro games and has evolved into a career crafting unique pixel art for indie games, personal projects, and commercial clients.</p>
+          <p>I specialize in character design, environment art, and animation, bringing stories to life one pixel at a time.</p>
+          <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>Character Design</li>
+              <li>Environment Art</li>
+              <li>Animation</li>
+              <li>Game Assets</li>
+              <li>UI Elements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Get in <span class="accent">Touch</span></h2>
+      <p>Interested in working together? Fill out the form below and I'll get back to you soon!</p>
+      <contact-form></contact-form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pixel Art Portfolio. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Twitter"><span class="icon">𝕏</span></a>
+      <a href="#" aria-label="Instagram"><span class="icon">📷</span></a>
+      <a href="#" aria-label="ArtStation"><span class="icon">🎨</span></a>
+    </div>
+  </footer>
+
+  <art-modal></art-modal>
+</body>
+</html>

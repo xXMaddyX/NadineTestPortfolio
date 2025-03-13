@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="components.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+  
+  <header>
+    <pixel-nav>
+      <nav slot="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </pixel-nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <pixel-hero>
+        <h1 slot="title">Pixel Art Portfolio</h1>
+        <p slot="subtitle">Creating digital worlds one pixel at a time</p>
+      </pixel-hero>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <pixel-gallery>
+        <pixel-artwork 
+          src="https://placeholder.svg?height=300&width=300" 
+          title="Cyberpunk City" 
+          description="A neon-lit cyberpunk cityscape">
+        </pixel-artwork>
+        <pixel-artwork 
+          src="https://placeholder.svg?height=300&width=300" 
+          title="Forest Adventure" 
+          description="A peaceful forest scene with hidden details">
+        </pixel-artwork>
+        <pixel-artwork 
+          src="https://placeholder.svg?height=300&width=300" 
+          title="Space Explorer" 
+          description="An astronaut exploring an alien planet">
+        </pixel-artwork>
+        <pixel-artwork 
+          src="https://placeholder.svg?height=300&width=300" 
+          title="Retro Game Scene" 
+          description="Inspired by classic 8-bit games">
+        </pixel-artwork>
+        <pixel-artwork 
+          src="https://placeholder.svg?height=300&width=300" 
+          title="Pixel Portrait" 
+          description="A detailed character portrait">
+        </pixel-artwork>
+        <pixel-artwork 
+          src="https://placeholder.svg?height=300&width=300" 
+          title="Abstract Composition" 
+          description="Geometric patterns and vibrant colors">
+        </pixel-artwork>
+      </pixel-gallery>
+    </section>
+
+    <section id="about">
+      <h2>About the Artist</h2>
+      <pixel-about>
+        <div slot="bio">
+          <p>I'm a digital artist specializing in pixel art, creating detailed worlds and characters with a minimalist approach. My work combines nostalgic 8-bit aesthetics with modern design principles.</p>
+          <p>With over 5 years of experience in digital art, I've worked on indie games, album covers, and personal projects that explore the boundaries of pixel-based creativity.</p>
+        </div>
+        <div slot="skills">
+          <h3>Skills</h3>
+          <pixel-skill name="Pixel Art" level="95"></pixel-skill>
+          <pixel-skill name="Animation" level="85"></pixel-skill>
+          <pixel-skill name="Game Assets" level="90"></pixel-skill>
+          <pixel-skill name="UI Design" level="80"></pixel-skill>
+        </div>
+      </pixel-about>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <pixel-contact>
+        <form slot="form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </pixel-contact>
+    </section>
+  </main>
+
+  <footer>
+    <pixel-footer>
+      <div slot="social">
+        <a href="#" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="#" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+      </div>
+      <p slot="copyright">© 2025 Pixel Artist. All rights reserved.</p>
+    </pixel-footer>
+  </footer>
+</body>
+</html>

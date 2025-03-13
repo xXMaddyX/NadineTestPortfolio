@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art Creator Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  
+  <header>
+    <div class="header-content">
+      <div class="avatar-container">
+        <div class="avatar"></div>
+      </div>
+      <div class="title-container">
+        <h1 class="glitch" data-text="PIXEL CREATOR">PIXEL CREATOR</h1>
+        <p class="subtitle">Digital Pixel Art & Game Assets</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2 class="section-title">Creating Worlds <span class="highlight">Pixel by Pixel</span></h2>
+        <p>Specializing in retro-inspired game assets, character designs, and immersive pixel environments</p>
+        <button class="pixel-button">View Portfolio</button>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      <div class="projects-grid">
+        <project-card 
+          title="Neon Nights" 
+          description="A cyberpunk-themed asset pack featuring characters, environments, and props."
+          image="/placeholder.svg?height=300&width=400"
+          tags="Game Assets, Cyberpunk, Characters">
+        </project-card>
+        
+        <project-card 
+          title="Forest Kingdom" 
+          description="Fantasy forest tileset with animated creatures and environmental effects."
+          image="/placeholder.svg?height=300&width=400"
+          tags="Environment, Fantasy, Animation">
+        </project-card>
+        
+        <project-card 
+          title="Space Odyssey" 
+          description="Sci-fi spaceship interiors and character sprites for a space exploration game."
+          image="/placeholder.svg?height=300&width=400"
+          tags="Sci-Fi, Spaceships, Characters">
+        </project-card>
+        
+        <project-card 
+          title="Dungeon Crawler" 
+          description="Complete asset pack for roguelike dungeon crawler games with animated traps and monsters."
+          image="/placeholder.svg?height=300&width=400"
+          tags="Game Assets, Roguelike, Animation">
+        </project-card>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title">Artwork <span class="highlight">Gallery</span></h2>
+      <artwork-carousel>
+        <div slot="artwork" class="carousel-item">
+          <img src="/placeholder.svg?height=400&width=600" alt="Pixel art landscape with mountains">
+          <div class="artwork-info">
+            <h3>Mountain Vista</h3>
+            <p>Landscape study with dynamic lighting</p>
+          </div>
+        </div>
+        <div slot="artwork" class="carousel-item">
+          <img src="/placeholder.svg?height=400&width=600" alt="Pixel art character in cyberpunk setting">
+          <div class="artwork-info">
+            <h3>Cyber Detective</h3>
+            <p>Character design for noir-inspired game</p>
+          </div>
+        </div>
+        <div slot="artwork" class="carousel-item">
+          <img src="/placeholder.svg?height=400&width=600" alt="Pixel art animated waterfall">
+          <div class="artwork-info">
+            <h3>Cascading Falls</h3>
+            <p>Animated environment piece with particle effects</p>
+          </div>
+        </div>
+        <div slot="artwork" class="carousel-item">
+          <img src="/placeholder.svg?height=400&width=600" alt="Pixel art spaceship interior">
+          <div class="artwork-info">
+            <h3>Engine Room</h3>
+            <p>Detailed spaceship interior with ambient lighting</p>
+          </div>
+        </div>
+        <div slot="artwork" class="carousel-item">
+          <img src="/placeholder.svg?height=400&width=600" alt="Pixel art fantasy character">
+          <div class="artwork-info">
+            <h3>Forest Guardian</h3>
+            <p>Character design with animation frames</p>
+          </div>
+        </div>
+      </artwork-carousel>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="pixel-frame">
+            <img src="/placeholder.svg?height=400&width=300" alt="Pixel art portrait of the artist">
+          </div>
+        </div>
+        <div class="about-text">
+          <p>Hello! I'm a digital pixel artist with over 5 years of experience creating assets for indie games and personal projects.</p>
+          <p>My work combines classic pixel art techniques with modern design principles to create visually striking and nostalgic artwork.</p>
+          <p>I specialize in character design, environment art, and animation, with a particular focus on creating cohesive visual styles for game projects.</p>
+          <div class="skills">
+            <div class="skill-category">
+              <h3>Software</h3>
+              <ul>
+                <li>Aseprite</li>
+                <li>Photoshop</li>
+                <li>Pixel Studio</li>
+                <li>Pro Motion</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Specialties</h3>
+              <ul>
+                <li>Character Design</li>
+                <li>Environment Art</li>
+                <li>Animation</li>
+                <li>UI Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>Interested in working together? I'm currently available for freelance projects and collaborations.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="pixel-icon email-icon"></div>
+              <p>pixelcreator@example.com</p>
+            </div>
+            <div class="contact-method">
+              <div class="pixel-icon twitter-icon"></div>
+              <p>@PixelCreatorArt</p>
+            </div>
+            <div class="contact-method">
+              <div class="pixel-icon discord-icon"></div>
+              <p>PixelCreator#1234</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="pixel-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Pixel Creator. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-link twitter"></a>
+        <a href="#" class="social-link instagram"></a>
+        <a href="#" class="social-link artstation"></a>
+        <a href="#" class="social-link github"></a>
+      </div>
+    </div>
+  </footer>
+
+  <template id="project-card-template">
+    <div class="project-card">
+      <div class="project-image">
+        <img src="/placeholder.svg" alt="">
+      </div>
+      <div class="project-content">
+        <h3 class="project-title"></h3>
+        <p class="project-description"></p>
+        <div class="project-tags"></div>
+        <button class="pixel-button small">View Project</button>
+      </div>
+    </div>
+  </template>
+
+  <template id="artwork-carousel-template">
+    <div class="carousel-container">
+      <button class="carousel-button prev">◀</button>
+      <div class="carousel-track">
+        <slot name="artwork"></slot>
+      </div>
+      <button class="carousel-button next">▶</button>
+      <div class="carousel-dots"></div>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

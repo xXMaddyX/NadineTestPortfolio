@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelVerse | 2D Pixel Art</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <div class="grid-background"></div>
+  
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="pixel-dot"></span>
+        <h1>PIXEL<span class="accent">VERSE</span></h1>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2 class="glitch" data-text="DIGITAL PIXEL ARTIST">DIGITAL PIXEL ARTIST</h2>
+        <p class="subtitle">Creating worlds one pixel at a time</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="pixel-avatar"></div>
+        <div class="floating-pixels"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <project-carousel></project-carousel>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2 class="section-title">Art <span class="accent">Gallery</span></h2>
+      <art-gallery></art-gallery>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-content">
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <p>I'm a digital artist specializing in 2D pixel art with over 8 years of experience creating game assets, illustrations, and animations. My work combines nostalgic pixel aesthetics with modern design principles.</p>
+        <p>My passion for pixel art began with classic video games from the 80s and 90s. Today, I push the boundaries of the medium by blending traditional pixel techniques with contemporary digital art approaches.</p>
+        <div class="skills">
+          <skill-tag name="Pixel Art"></skill-tag>
+          <skill-tag name="Animation"></skill-tag>
+          <skill-tag name="Game Assets"></skill-tag>
+          <skill-tag name="Character Design"></skill-tag>
+          <skill-tag name="Environment Art"></skill-tag>
+        </div>
+      </div>
+      <div class="about-image">
+        <div class="terminal">
+          <div class="terminal-header">
+            <span class="terminal-button"></span>
+            <span class="terminal-button"></span>
+            <span class="terminal-button"></span>
+          </div>
+          <div class="terminal-content">
+            <p><span class="prompt">$</span> <span class="command">load artist_profile.exe</span></p>
+            <p>Loading profile data...</p>
+            <p>Name: <span class="highlight">Pixel Artist</span></p>
+            <p>Status: <span class="highlight">Creating digital worlds</span></p>
+            <p>Location: <span class="highlight">Digital Realm</span></p>
+            <p>Mission: <span class="highlight">Pushing pixel boundaries</span></p>
+            <p><span class="prompt">$</span> <span class="command">_</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Get in <span class="accent">Touch</span></h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p>Interested in working together? Have questions about my process or pricing? Send me a message and I'll get back to you as soon as possible.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="icon email-icon"></div>
+              <p>pixel@artist.com</p>
+            </div>
+            <div class="contact-method">
+              <div class="icon location-icon"></div>
+              <p>Digital Universe, Pixel Sector</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <div class="social-icon twitter"></div>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <div class="social-icon instagram"></div>
+            </a>
+            <a href="#" class="social-link" aria-label="Artstation">
+              <div class="social-icon artstation"></div>
+            </a>
+            <a href="#" class="social-link" aria-label="Dribbble">
+              <div class="social-icon dribbble"></div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form-component></form-component>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="pixel-dot"></span>
+        <h3>PIXEL<span class="accent">VERSE</span></h3>
+      </div>
+      <p class="copyright">© <span id="current-year"></span> PixelVerse. All rights reserved.</p>
+      <p class="tagline">Creating digital art one pixel at a time</p>
+    </div>
+  </footer>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
